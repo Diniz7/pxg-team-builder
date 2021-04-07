@@ -1,9 +1,9 @@
 function Tempo(props) { 
-    const dynamicDate = new Date()
-    const dynamicDateString = dynamicDate.toGMTString()
+    const dynamicDate = new Date();
+    const dynamicDateString = dynamicDate.toGMTString();
 
 
-    return(
+    return (
         <div>
             <div>{dynamicDateString} (dinâmico)</div>
             <div>{props.staticDateString} (estático)</div>
@@ -12,8 +12,8 @@ function Tempo(props) {
 }
 
 export function getStaticProps() {
-    const staticDate = new Date()
-    const statidDateString = staticDate.toGMTString()
+    const staticDate = new Date();
+    const staticDateString = staticDate.toGMTString();
 
     return {
         props: {
